@@ -9,12 +9,21 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sessions-data-table": [
+        "dist/sessions-data-table"
+      ],
+      "sessions-data-table/*": [
+        "dist/sessions-data-table/*"
+      ]
+    }
   }
 }

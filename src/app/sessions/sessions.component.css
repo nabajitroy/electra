@@ -1,0 +1,44 @@
+.container{margin: 10px ;}
+
+.form-full-width {
+    min-width: 150px;
+    max-width: 500px;
+    width:100%;
+}
+
+ 
+table {
+  width: 100%;
+}
+
+ 
+
+ .session-table .mat-cell{
+ 	width: 17.5%;
+ }
+
+ .session-table .cdk-column-Actions{
+
+ 	width: 20%;
+ }
+
+ .session-table .cdk-column-status{
+
+ 	width: 10%;
+ } 
+ .mat-form-field {
+    margin: 10px;
+    width: 25.3%;
+}
+ 
+.session-table .mat-form-field{
+	width: 100%;
+	padding: 10px;
+	margin: 10px;
+}
+
+ 
+.session-table[_ngcontent-c11] .mat-cell[_ngcontent-c11]{
+	width: auto;
+}
+.session-table td.mat-cell:first-child{padding: 0;}

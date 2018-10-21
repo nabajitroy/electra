@@ -1,0 +1,13 @@
+
+<div>
+      <h1>Vote for your player for the season of {{session.session_startdate}} - {{session.session_enddate}}</h1>
+      <ul>
+        <li *ngFor="let team of teams.response">
+          <img [src]="team.member_picture" [alt]="" >
+          <!--(click)="castVote(player.shortName)" [ngClass]="getVoteClasses(player.shortName)"!-->
+          <h4>{{team.member_firstname}} {{team.member_lastname}}</h4>
+          <p>{{team.member_jobrole}}</p>
+         
+        </li>
+      </ul>
+    </div>
