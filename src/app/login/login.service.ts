@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class DashboardService {
+export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  getVoteResult(){
-	     return this.http.get('api/dashboard/getResult');
-	  }
+  verifyLogin(data){
+  	console.log(JSON.stringify(data));
+	    return this.http.post('api/authentication/getToken',data);
+	}
 }

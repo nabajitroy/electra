@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.config.json",
     "build": "ng build && nodemon app.js",
     "test": "ng test",
     "lint": "ng lint",
@@ -35,6 +35,8 @@
     "chart.js": "^2.7.2",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "jwt-decode": "^2.2.0",
     "moment": "^2.22.2",
     "mysql": "^2.15.0",
     "pusher": "^2.1.3",

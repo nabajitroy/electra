@@ -8,8 +8,10 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 .example-icon {
   padding: 0 14px;
 }
-
-.example-spacer {
+.spacer1 {
+    flex: 0.1;
+}
+.spacer {
   flex: 1 1 auto;
 }
 

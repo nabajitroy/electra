@@ -8,10 +8,10 @@
    app.use(bodyParser.json()); 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(express.static(path.join(__dirname,'dist/electra')));
-    app.use('/teams',routes);
-    app.use('/admin',routes);
-    app.use('/dashboard',routes);
-
+    app.use('/api/teams',routes);
+    app.use('/api/admin',routes);
+    app.use('/api/dashboard',routes);
+    app.use('/api/authentication',routes);
  
 
  

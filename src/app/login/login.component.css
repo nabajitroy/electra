@@ -1,0 +1,30 @@
+ 
+
+ .input-full-width,
+ .table-full-width{ 
+ 	width:100%;
+ }
+/*.login-box{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle  
+}
+.login-card{
+    padding:10px; 
+    background: #fff;
+    border: 1px solid #ddd;
+    width:35%;   
+    margin: 0 auto;
+}*/
+
+ .login-box {
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.login-card{
+  margin: 0 ;
+  width:30%;
+}

@@ -20,6 +20,7 @@ import { ConfirmationDialogService } from './confirmation-dialog/confirmation-di
 import { ElectraBoardComponent } from './electra-board/electra-board.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -31,6 +32,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const appRoutes:Routes = [
+   {
+     path: 'login',
+     component: LoginComponent
+      
+   },
    {
      path: '',
      redirectTo: 'home',
@@ -77,7 +83,8 @@ const appRoutes:Routes = [
     AppComponent,
     ConfirmationDialogComponent,
     ElectraBoardComponent,
-    DashboardComponent , 
+    DashboardComponent,
+    LoginComponent , 
     
   ],
   imports: [

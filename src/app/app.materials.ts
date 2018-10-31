@@ -24,7 +24,7 @@ import {
       MatNativeDateModule,
       MatTableModule, 
       MatPaginatorModule,
-
+      MatProgressSpinnerModule
       
   } from '@angular/material';
 
@@ -32,7 +32,7 @@ import {
 
 @NgModule({
   declarations: [ 
-
+  
   ],
   imports: [
     BrowserModule,
@@ -49,6 +49,7 @@ import {
     ReactiveFormsModule,
     MatTableModule, 
     MatPaginatorModule,  
+    MatProgressSpinnerModule,
     // Specify alert library as an import
     AlertsModule.forRoot()
   ],
@@ -67,6 +68,7 @@ import {
     ReactiveFormsModule,
     MatTableModule ,
     MatPaginatorModule,  
+    MatProgressSpinnerModule,
     AlertsModule 
   ],
   providers: [

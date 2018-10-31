@@ -9,30 +9,30 @@ export class SessionService {
 
   constructor(private http: HttpClient) { }
 	  getCurrentSession(){
-	     return this.http.get('/admin/getSessions');
+	     return this.http.get('api/admin/getSessions');
 	  }
 
      createSession(sessionData){
      	sessionData.session_startdate = new DatePipe('en-US').transform(sessionData.session_startdate, 'yyyy-MM-dd HH:mm:ss');
 		sessionData.session_enddate = new DatePipe('en-US').transform(sessionData.session_enddate, 'yyyy-MM-dd HH:mm:ss')
-	     return  this.http.post('/admin/createSession',sessionData);
+	     return  this.http.post('api/admin/createSession',sessionData);
 	  }
 
 	  openCloseSession(sessionData){
      	console.log(JSON.stringify(sessionData));
-	     return  this.http.put('/admin/openCloseSession',sessionData);
+	     return  this.http.put('api/admin/openCloseSession',sessionData);
 	  }
       
       updateSession(sessionData){
 		sessionData.session_startdate = new DatePipe('en-US').transform(sessionData.session_startdate, 'yyyy-MM-dd HH:mm:ss');
 		sessionData.session_enddate = new DatePipe('en-US').transform(sessionData.session_enddate, 'yyyy-MM-dd HH:mm:ss')
 		sessionData.last_modified = new DatePipe('en-US').transform(sessionData.last_modified, 'yyyy-MM-dd HH:mm:ss')
-	     return  this.http.put('/admin/updateSession/'+sessionData.session_id,sessionData);
+	     return  this.http.put('api/admin/updateSession/'+sessionData.session_id,sessionData);
 	  }
 
         deleteSession(sessionData){ 
         console.log(JSON.stringify(sessionData));	
-	     return  this.http.put('/admin/deleteSession/'+sessionData.session_id,sessionData);
+	     return  this.http.put('api/admin/deleteSession/'+sessionData.session_id,sessionData);
 	  }
 
 }
